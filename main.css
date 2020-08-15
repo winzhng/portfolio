@@ -1,0 +1,126 @@
+body{
+    background:#f7e6d3;
+    color: dimgray;
+    font-family: 'Baskervville', serif;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5em;
+}
+/*nav bar*/
+.menu_left{
+    display: inline-flex;
+    list-style: none;
+    float: left;
+}
+
+.menu_left img{
+    width: 30px;
+    margin-right: 30px;
+    align-items: center;
+}
+.navText{
+    visibility: hidden;
+    transform: translate(-25%);
+    text-align: center;
+}
+.icon:hover .navText {
+    visibility: visible;
+    color: #e2af90;
+
+}
+.social_right{
+    display: inline-flex;
+    list-style: none;
+    float: right;
+}
+.social_right button{
+    width: 85px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7e6d3;
+    border-style: none;
+}
+/*page styling*/
+a{
+    text-decoration: none;
+    color: #e2af90;
+}
+.about img{
+    width: 300px;
+    margin-left: 60px;
+    margin-bottom: 200px;
+    max-width: 250px;
+    height: auto;
+    float: right;
+    padding-right: 40px;
+}
+
+.intro h1{
+    clear: both;
+    color: #c3846b;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Baskervville', serif;
+    max-width: 700px;
+    margin: auto;
+}
+
+h1{
+    color: #c3846b;
+    font-size: 2em;
+    font-family: 'Baskervville', serif; 
+    margin-left: 2em;
+}
+h2{
+    color: #c3846b;
+    text-align: center;
+    font-size: 1.25em; 
+    font-family: 'Baskervville', serif; 
+    max-width: 700px;
+    margin: auto;
+}
+
+.answer{
+    margin-left: 4em;
+}
+/*contact form*/
+#contact_form{
+    margin: auto;
+}
+label {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Baskervville', serif;
+  }
+  
+  #submit_button {
+    background-color: #c3846b;
+    height: 50px;
+    width: 30%;
+    color: #f7f7f7;
+  }
+  
+  input, textarea {
+    background-color: #f7f7f7;
+    color: dimgray;
+    width: 350px;
+    height: 35px;
+    margin-bottom: 15px;
+    border-color: #c3846b;
+    border-style: none;
+  }
+  .required{
+      color: #c3846b;
+      font-family: 'Baskervville', serif;
+      font-weight: bold;
+  }
+    #message{
+      height: 200px;
+  }
+
+//tablet and above devices
+@media (min-width: 768px) { 
+  .contact-wrap{
+    width: 60%;
+    margin: auto;
+  }
+}
