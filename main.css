@@ -55,7 +55,7 @@ a{
     text-align: center;
     font-size: 5em;
     font-family: 'Baskervville', serif;
-    max-width: 700px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -64,14 +64,15 @@ h1{
     font-size: 2em;
     font-family: 'Baskervville', serif; 
     margin-left: 2em;
+    margin: 50px;
 }
 h2{
     color: #c3846b;
     text-align: center;
     font-size: 1.25em; 
     font-family: 'Baskervville', serif; 
-    max-width: 700px;
     margin: auto;
+    margin-top: 50px;
 }
 
 .about_wrapper{
@@ -81,23 +82,32 @@ h2{
 .avi{
     grid-column: 2 ;
     grid-row: 1;
-    max-width: 1fr;
     margin: auto;
 }
 .bio{
     grid-column: 1;
     grid-row: 1;
-    margin-left: 150px;
+    margin: 0 50px 0 150px;
 }
+.answer{
+    margin-top: 40px;
+}
+
+h3{
+    letter-spacing: 5px;
+    color: #c3846b;
+    font-family: 'Baskervville', serif;
+}
+
 /*work wrapper*/
 .wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr, 1fr;
 }
     #app{
         grid-column: 1;
         grid-row: 1;
-        margin: 50px 150px 50px 150px;
+        margin: 50px 0 50px 200px;
     }
     .one_des{ 
         grid-column: 2 ;
@@ -107,12 +117,12 @@ h2{
     #graphics{
         grid-column: 2;
         grid-row: 2;
-        margin: 150px 50px 150px 0px;
+        margin: 150px 200px 150px 0px;
     }
     .two_des{
         grid-column: 1;
         grid-row: 2;
-        margin: 150px;
+        margin: 150px 50px 150px 200px;
     }
     .threevis{ 
         grid-column: 1;
@@ -129,9 +139,7 @@ h2{
         border-style: solid;
         border-color: #c3846b;
     }
-    .one_des, .two_des, .three_des{
-        vertical-align: center;
-    }
+
 
 /*slider*/
 .slider {
@@ -170,8 +178,8 @@ h2{
   .slides > div {
     scroll-snap-align: start;
     flex-shrink: 0;
-    width: 300px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
     margin-right: 20px;
     border-radius: 10px;
     background: #eee;
@@ -189,22 +197,16 @@ h2{
     height: 100%;
   }
   
-  .videoes {
+.videoes {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    margin: 150px;
+    margin: 50px 150px 0 150px;
 }
 .video3{
     background-color: #f4f4f4;
 }
 
-.four_des{
-    display: inline-flex;
-    list-style: none;
-    text-align: center;
-    max-width: 600px;
-}
 /*contact form*/
 #contact_form{
     margin: auto;
@@ -240,10 +242,42 @@ label {
       height: 200px;
   }
 
+footer{
+    margin-top: 60px;
+    background-color: #f7f7f7;
+    height: 20%;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+}
+
+.email{
+    margin-top: 200px;
+    margin-left: 40px;
+}
+
 //tablet and above devices
 @media (min-width: 768px) { 
-  .contact-wrap{
-    width: 60%;
-    margin: auto;
+    .contact-wrap{
+      width: 60%;
+      margin: auto;
+    }
+    .avi{
+        width: 40%;
+    }
   }
+
+@media screen and (min-width: 1000px) { 
+
+    .wrapper{
+        width: 50%;
+    }
+
+
+
 }
+
+
+
