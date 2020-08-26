@@ -1,0 +1,33 @@
+#app{
+    grid-column: 1;
+    grid-row: 1;
+    margin: 50px 0 50px 200px;
+}
+.one_des{ 
+    margin: 50px 150px 50px 0px;
+}
+#graphics{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 150px 200px 150px 0px;
+}
+.two_des{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 150px 50px 150px 200px;
+}
+.threevis{ 
+    grid-column: 1;
+    grid-row: 3;
+    margin: 50px 150px 50px 150px;
+}
+.three_des{ 
+    grid-column: 2;
+    grid-row: 3;
+    margin: 50px 150px 50px 0px;
+}
+.threevis img{
+    width: 500px;
+    border-style: solid;
+    border-color: #c3846b;
+}
