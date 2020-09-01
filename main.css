@@ -76,6 +76,12 @@ h2, h3{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+h4{
+    color: #c3846b;
+    font-size: 1.25em; 
+    font-family: 'Baskervville', serif; 
+}
 .about_wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
